@@ -1,2 +1,73 @@
 @charset "UFT-8";
 
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#cpu {display: none;}
+    img#tv {display: none;}
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        content: 'Esse impressão foi feita pelo Professor Gustavo Guanabara excêlente 100%';
+        color: blue;
+        text-align: center;
+    }
+
+
+    main h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: none;
+        color: black;
+    }
+
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLE*/
+       body {
+        background-image: url(../imagens/back-tablet.jpg);
+       } 
+
+       img#phone {display: none;}
+       img#tablet {display: block;}
+       img#print {display: none;}
+       img#cpu {display: none;}
+       img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* computador*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+   
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#cpu {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px)  {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+   
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#cpu {display: none;}
+    img#tv {display: block;}
+}
