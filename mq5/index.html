@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
         <header>
             <h1>Meu Site</h1>
             <i id="burguer" class="material-icons" onclick="cliqueMenu()">
@@ -40,7 +41,7 @@
 
                 </p>
 
-                <img src="https://blog.apiki.com/wp-content/uploads/sites/2/2019/08/media-queries-screens.jpg" alt="" srcset="">
+                <div  id="media"><img src="https://blog.apiki.com/wp-content/uploads/sites/2/2019/08/media-queries-screens.jpg" alt="" srcset=""></div>
             </article>
         </main>
 
@@ -50,6 +51,15 @@
         </footer>
 
         <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 768){
+                    abas.style.display = 'block';
+                } else {
+                    abas.style.display = 'none';
+                }
+            }
+
+
             function cliqueMenu(){
                  if (abas.style.display == 'block'){
                     abas.style.display = 'none';

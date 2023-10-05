@@ -34,7 +34,7 @@ i#burguer:hover {
 }
 
 menu {
-    display: none;
+    display: block;
 }
 
 menu > ul {
@@ -77,13 +77,15 @@ article > p {
 article img {
     margin: auto;
     padding: auto;
-    padding-right: 50px;
-    padding-left: 250px;
-    
+    cursor: pointer;
+}
+
+div#media {
+    text-align: center;
 }
 
 footer {
-    background-color: rgb(73, 70, 70);
+    background-color: rgb(38, 38, 38);
     margin: auto;
     margin-top: 40px;
     padding: 5px;
